@@ -1,0 +1,106 @@
+.consultation-page {
+    background-color: #f8fafc;
+    min-height: 90vh;
+    padding: 60px 20px;
+}
+
+.consultation-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.consultation-header {
+    margin-bottom: 50px;
+}
+
+.consultation-header h1 {
+    color: #1A237E; /* Navy */
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.consultation-header h1 span {
+    color: #0092bf; /* Emerald */
+}
+
+.consultation-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.specialty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.consult-card {
+    background: #ffffff;
+    padding: 40px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.03);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consult-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(26, 35, 126, 0.08);
+    border-color: #0092bf;
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f0fdfa;
+    color: #0092bf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.consult-card:hover .card-icon {
+    background-color: #0092bf;
+    color: white;
+}
+
+.consult-card h3 {
+    color: #1A237E;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-consult {
+    background-color: #1A237E;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-consult:hover {
+    background-color: #0092bf;
+    box-shadow: 0 4px 12px rgba(0, 191, 165, 0.2);
+}

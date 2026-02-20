@@ -1,0 +1,169 @@
+.search-page {
+    background-color: #f8fafc;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.search-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-header h1 {
+    font-size: 2.5rem;
+    color: #1A237E; /* Navy */
+}
+
+.search-header h1 span {
+    color: #0092bf; /* Emerald */
+}
+
+.search-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+/* Barre de recherche moderne */
+.search-input-group {
+    background: white;
+    padding: 8px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(26, 35, 126, 0.05);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.search-main-icon {
+    margin-left: 20px;
+    color: #94a3b8;
+}
+
+.search-input-group input {
+    flex: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn-search-go {
+    background-color: #1A237E;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-search-go:hover {
+    background-color: #0092bf;
+}
+
+/* Tags de spécialités */
+.specialty-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.specialty-tag {
+    background: white;
+    padding: 8px 18px;
+    border-radius: 50px;
+    border: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.specialty-tag:hover {
+    border-color: #0092bf;
+    color: #0092bf;
+    background-color: #f0fdfa;
+}
+
+/* Carte Docteur ZenClinic */
+.doctor-result-card {
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid #e2e8f0;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.doctor-result-card:hover {
+    transform: translateY(-5px);
+}
+
+.dr-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f5f9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #0092bf;
+}
+
+.dr-info h3 {
+    margin: 0;
+    color: #1A237E;
+    font-size: 1.4rem;
+}
+
+.dr-specialty {
+    color: #0092bf;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.dr-exp {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.btn-book-now {
+    background-color: #1A237E;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-book-now:hover {
+    background-color: #0092bf;
+    box-shadow: 0 5px 15px rgba(0, 191, 165, 0.3);
+}
+
+@media (max-width: 600px) {
+    .doctor-result-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,164 @@
+.home-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C3E50;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    min-height: 70vh;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #1A237E; /* Navy */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #0092bf; /* Emerald */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary-home, .btn-secondary-home {
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-home {
+    background-color: #1A237E;
+    color: white;
+}
+
+.btn-primary-home:hover {
+    background-color: #0092bf;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 191, 165, 0.2);
+}
+
+.btn-secondary-home {
+    background-color: transparent;
+    color: #1A237E;
+    border: 2px solid #1A237E;
+}
+
+.btn-secondary-home:hover {
+    background-color: #1A237E;
+    color: white;
+}
+
+.medical-icon-large {
+    font-size: 15rem;
+    color: #e2e8f0;
+    opacity: 0.5;
+}
+
+/* STATS SECTION */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+    background-color: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: #1A237E;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+/* SERVICES SECTION */
+.services-overview {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+.services-overview h2 {
+    font-size: 2.2rem;
+    color: #1A237E;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item i {
+    font-size: 2.5rem;
+    color: #0092bf;
+    margin-bottom: 20px;
+}
+
+.service-item h4 {
+    font-size: 1.3rem;
+    color: #1A237E;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+    .hero-image {
+        display: none;
+    }
+}

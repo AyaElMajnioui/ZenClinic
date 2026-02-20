@@ -1,0 +1,115 @@
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Vert pour le succès */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.btn-close-notification {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}.notification-toast {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #ffffff;
+    color: #334155;
+    min-width: 300px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(26, 35, 126, 0.1);
+    z-index: 2000;
+    overflow: hidden;
+    border-left: 6px solid #0092bf; /* Accent Émeraude */
+    animation: slideInRight 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification-icon {
+    font-size: 1.4rem;
+    color: #0092bf;
+}
+
+.notification-text {
+    flex: 1;
+}
+
+.notification-status {
+    display: block;
+    font-weight: 800;
+    font-size: 0.75rem;
+    color: #1A237E; /* Navy */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.notification-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.btn-close-toast {
+    background: #f1f5f9;
+    border: none;
+    color: #94a3b8;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-close-toast:hover {
+    background: #e2e8f0;
+    color: #1A237E;
+}
+
+/* Barre de progression */
+.notification-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #0092bf;
+    opacity: 0.2;
+    animation: progressFill 3s linear forwards;
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from {
+        transform: translateX(110%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes progressFill {
+    from { width: 100%; }
+    to { width: 0%; }
+}

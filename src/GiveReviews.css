@@ -1,0 +1,97 @@
+.review-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background-color: #f8fafc;
+    padding: 20px;
+}
+
+.review-container {
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(26, 35, 126, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.review-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review-header h2 {
+    color: #1A237E; /* Navy */
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.review-header h2 span {
+    color: #0092bf; /* Emerald */
+}
+
+.review-header p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #334155;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #f1f5f9;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #fcfdfe;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0092bf;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 191, 165, 0.1);
+    outline: none;
+}
+
+/* Style spécifique au bouton */
+.btn-submit-review {
+    width: 100%;
+    padding: 15px;
+    background-color: #1A237E;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit-review:hover:not(:disabled) {
+    background-color: #0092bf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 191, 165, 0.2);
+}
+
+/* État désactivé pour ZenClinic */
+.btn-submit-review:disabled {
+    background-color: #e2e8f0;
+    color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+}
